@@ -1,7 +1,8 @@
 import Card from "@/components/common/Card";
+import { CardProps } from "@/interfaces";
 import React from "react";
 
-const home = () => {
+const home: React.FC<CardProps> = () => {
   return (
     <>
       <div>

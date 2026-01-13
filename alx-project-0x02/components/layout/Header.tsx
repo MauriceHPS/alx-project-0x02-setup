@@ -14,14 +14,14 @@ const Header = () => {
         <nav className="flex items-center gap-6">
           <Link
             href="/home"
-            className="text-gray-900 hover:text-gray-400/80 font-bold text-xl cursor-pointer"
+            className="relative group transition-colors duration-300 text-gray-900 hover:text-gray-400/80 font-bold text-xl cursor-pointer"
           >
             Home
           </Link>
 
           <Link
             href="/about"
-            className="text-indigo-900 hover:text-indigo-600 font-bold text-xl cursor-pointer"
+            className=" text-indigo-900 hover:text-indigo-600 transition-all duration-300 font-bold text-xl cursor-pointer"
           >
             About
           </Link>
