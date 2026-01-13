@@ -14,7 +14,7 @@ export interface PostModalProps {
 }
 
 export interface ButtonProps {
-  size: string;
-  shape: string;
+  size: ["small" | "medium" | "large"];
+  shape: ["rounded-sm" | "rounded-md" | "rounded-full"];
   name: string;
 }
