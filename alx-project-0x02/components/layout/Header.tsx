@@ -4,17 +4,29 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div className="flex flex-col">
-        <ul>
-          <li>
-            <Link href="/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li></li>
-        </ul>
-      </div>
+      <header
+        className="flex items-center justify-between  
+      bg-linear-to-r from-pink-200 to-pink-600 px-6 py-4 gap-6"
+      >
+        <div className="text-xl cursor-pointer font-extrabold text-gray-800 hover:text-gray-600 ">
+          Luxury Stays
+        </div>
+        <nav className="flex items-center gap-6">
+          <Link
+            href="/home"
+            className="text-gray-900 hover:text-gray-400/80 font-bold text-xl cursor-pointer"
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/about"
+            className="text-indigo-900 hover:text-indigo-600 font-bold text-xl cursor-pointer"
+          >
+            About
+          </Link>
+        </nav>
+      </header>
     </>
   );
 };
