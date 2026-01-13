@@ -25,6 +25,13 @@ const Header = () => {
           >
             About
           </Link>
+
+          <Link
+            href="/posts"
+            className=" text-indigo-900 hover:text-indigo-600 transition-all duration-300 font-bold text-xl cursor-pointer"
+          >
+            Posts
+          </Link>
         </nav>
       </header>
     </>
