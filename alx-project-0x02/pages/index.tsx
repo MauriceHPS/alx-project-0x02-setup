@@ -17,7 +17,7 @@ export default function Home() {
       <div className="flex flex-col min-h-screen bg-linear-to-r from-pink-400 to-pink-100 text-black ">
         <Header />
         <main className="flex flex-col flex-1 items-center justify-center">
-          <div className="p-6 m-4 grid rounded-lg place-items-center justify between bg-pink-300">
+          <div className="p-6 m-4 grid rounded-lg place-items-center justify between bg-pink-200">
             <h1 className="items-center justify-between text-3xl font-bold">
               Welcome to the home page
             </h1>
@@ -34,7 +34,7 @@ export default function Home() {
           </div>
 
           {/* //Display the data received from the modal form */}
-          <div>
+          <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 ">
             {posts.length === 0 ? (
               <p className="text-white text-lg opacity-80">
                 No Post added!!! Be the first to add one?
@@ -43,8 +43,8 @@ export default function Home() {
               posts.map((post, Home) => (
                 <div
                   key={Home}
-                  className="bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl 
-                  transition duration-300 border-l-4 border-pink-500"
+                  className="m-4 bg-white p-6 rounded-xl shadow-xl hover:shadow-2xl 
+                  transition duration-300 border-l-4 border-pink-500 h-full flex flex-col justify-between"
                 >
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold text-gray-800">

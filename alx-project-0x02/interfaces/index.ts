@@ -12,3 +12,9 @@ export interface PostModalProps {
   onClose: () => void;
   onSave: (data: CardProps) => void;
 }
+
+export interface ButtonProps {
+  size: string;
+  shape: string;
+  name: string;
+}
