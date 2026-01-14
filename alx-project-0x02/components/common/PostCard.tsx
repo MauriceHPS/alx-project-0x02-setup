@@ -11,12 +11,12 @@ const PostCard: React.FC<PostProps> = ({ content, title, userId, body }) => {
         <div className="mb-4">
           <h2 className="text-2xl font-semibold text-gray-700">{title}</h2>
         </div>
-        <p>User ID: {userId}</p>
+        <p>{content}</p>
         <p
           className="grow mt-4 flex items-center justify-between 
         text-sm text-gray-500"
         >
-          Content: {content}
+          User ID: {userId}
         </p>
       </div>
     </>
