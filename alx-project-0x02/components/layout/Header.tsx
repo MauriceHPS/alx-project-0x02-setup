@@ -32,6 +32,13 @@ const Header = () => {
           >
             Posts
           </Link>
+
+          <Link
+            href="/users"
+            className="text-indigo-900 hover:text-indigo-600 transition-all duration-300 font-bold text-xl cursor-pointer"
+          >
+            Users
+          </Link>
         </nav>
       </header>
     </>
